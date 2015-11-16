@@ -95,6 +95,10 @@ footer {
   width: 10%;
 }
 
+.delete:hover {
+  cursor: pointer;
+}
+
 .total {
   width: 25%;
   margin-right: 0.5em;
