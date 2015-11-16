@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping List</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src"js/application.js"></script>
+</head>
+<body>
+	<h1>Shopping List</h1>
+	<table>
+		<tr class="header">
+		  	<th class="box"></th>
+		    <th class="item">Item</th>
+		    <th class="column">Price</th>		
+		    <th class="column">Quantity</th>
+		    <th class="column">Total</th>
+		    <th class="delete"></th>
+		</tr>
+		<tr class="entry">
+			<td class="box"></td>
+			<td class="item"><input class="edititem" size="30" placeholder="Enter Item"></td>
+			<td class="column">$<input class="editprice" type="number" min="0.00"  step="0.01" max="999999.99" value="0.00"></td>
+			<td class="column"><input class="editquantity" type="number" min="1" max="1000" value="1"></td>
+			<td class="column"><input class="button" type="submit" value="Add"></td>
+			<td class="delete"></td>
+		</tr>
+	  	<tr>
+		    <td class="box"><input type="checkbox" name="check" checked></td>
+		    <td class="item">Orange Juice</td>		
+		    <td class="column">$3.65</td>
+		    <td class="column">1</td>
+		    <td class="column">$3.65</td>
+	  		<td class="delete"><img src="images/delete.png"></td>
+	  	</tr>
+	  	<tr>
+		    <td class="box"><input type="checkbox" name="check" checked></td>
+		    <td class="item">Yogurt</td>		
+		    <td class="column">$2.99</td>
+		    <td class="column">2</td>
+		    <td class="column">$5.98</td>
+	  		<td class="delete"><img src="images/delete.png"></td>
+	  	</tr>
+	  	<tr>
+	  		<td class="box"><input type="checkbox" name="check"></td>
+	  		<td class="item">Cereal</td>
+	  		<td class="column">$4.00</td>
+	  		<td class="column">1</td>
+	  		<td class="column">$4.00</td>
+	  		<td class="delete"><img src="images/delete.png"></td>
+	  	</tr>
+	  	<tr>
+		    <td class="box"><input type="checkbox" name="check" checked></td>
+		    <td class="item">Grapes</td>		
+		    <td class="column">$2.75</td>
+		    <td class="column">1</td>
+		    <td class="column">$2.75</td>
+	  		<td class="delete"><img src="images/delete.png"></td>
+	  	</tr>
+	  	<tr>
+	  		<td class="box"><input type="checkbox" name="check"></td>
+	  		<td class="item">Batteries</td>
+	  		<td class="column">$5.99</td>
+	  		<td class="column">1</td>
+	  		<td class="column">$5.99</td>
+	  		<td class="delete"><img src="images/delete.png"></td>
+	</table>
+	<h2>Drag items to sort</h2>
+	<table class="total">
+		<tr>
+			<td class="right">Total:</td>
+			<td class="left">$12.38</td>
+		</tr>
+		<tr>
+			<td class="right">Tax:</td>
+			<td class="left">$0.77</td>
+		</tr>
+		<tr>
+			<td class="right">Price:</td>
+			<td class="left">$13.15</td>
+		</tr>
+	</table>
+	<footer>
+	</footer>
+</body>
+</html>
